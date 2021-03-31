@@ -1,0 +1,389 @@
+*PPD-Adobe: "4.3"
+*%
+*% For information on using this, and to obtain the required backend
+*% script, consult http://www.linuxprinting.org/
+*%
+*% This file is published under the GNU General Public License
+*%
+*% PPD-O-MATIC (3.0.0 or newer) generated this PPD file. It is for use with 
+*% all programs and environments which use PPD files for dealing with
+*% printer capability information. The printer must be configured with the
+*% "foomatic-rip" backend filter script of Foomatic 3.0.0 or newer. This 
+*% file and "foomatic-rip" work together to support PPD-controlled printer
+*% driver option access with arbitrary free software printer drivers and
+*% printing spoolers.
+*%
+*% To save this file on your disk, wait until the download has completed
+*% (the animation of the browser logo must stop) and then use the
+*% "Save as..." command in the "File" menu of your browser or in the 
+*% pop-up manu when you click on this document with the right mouse button.
+*% DO NOT cut and paste this file into an editor with your mouse. This can
+*% introduce additional line breaks which lead to unexpected results.
+*%
+*% You may save this file as 'Canon-LBP-810-capt.ppd'
+*%
+*%
+*FormatVersion:	"4.3"
+*FileVersion:	"1.1"
+*LanguageVersion: English 
+*LanguageEncoding: ISOLatin1
+*PCFileName:	"lbp810.PPD"
+*Manufacturer:	"Canon"
+*Product:	"(LBP-810)"
+*cupsVersion:	1.0
+*cupsManualCopies: True
+*cupsModelNumber:  2
+*cupsFilter:	"application/vnd.cups-postscript 0 foomatic-rip"
+*%pprRIP:        foomatic-rip other
+*ModelName:     "Canon LBP-810"
+*ShortNickName: "Canon LBP-810 capt"
+*NickName:      "Canon LBP-810 Foomatic/capt (recommended)"
+*PSVersion:	"(3010.000) 550"
+*PSVersion:	"(3010.000) 651"
+*PSVersion:	"(3010.000) 652"
+*PSVersion:	"(3010.000) 653"
+*PSVersion:	"(3010.000) 704"
+*PSVersion:	"(3010.000) 705"
+*PSVersion:	"(3010.000) 800"
+*LanguageLevel:	"3"
+*ColorDevice:	False
+*DefaultColorSpace: Gray
+*FileSystem:	False
+*Throughput:	"1"
+*LandscapeOrientation: Plus90
+*TTRasterizer:	Type42
+
+
+
+
+*VariablePaperSize: False
+
+*FoomaticIDs: Canon-LBP-810 capt
+*FoomaticRIPCommandLine: "gs -q -dNOPAUSE -dPARANOIDSAFER -dBATCH -r60&&
+0x600 -sDEVICE=pbmraw%A%Z -sOutputFile=&quot;|capt%B&quot; - 1&gt; /tmp/capt.log&&
+ 2&gt;&amp;1"
+*End
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 100 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize A4/A4: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/US Letter: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5: "<</PageSize[421 595]/ImagingBBox null>>setpagedevice"
+*PageSize B5/B5 (JIS): "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+*PageSize Env10/Envelope #10: "<</PageSize[297 684]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC5/Envelope C5: "<</PageSize[459 649]/ImagingBBox null>>setpagedevice"
+*PageSize EnvDL/Envelope DL: "<</PageSize[312 624]/ImagingBBox null>>setpagedevice"
+*PageSize EnvISOB5/Envelope B5: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice"
+*PageSize EnvMonarch/Envelope Monarch: "<</PageSize[279 540]/ImagingBBox null>>setpagedevice"
+*PageSize Executive/Executive: "<</PageSize[522 756]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/US Legal: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 100 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion A4/A4: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/US Letter: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5: "<</PageSize[421 595]/ImagingBBox null>>setpagedevice"
+*PageRegion B5/B5 (JIS): "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+*PageRegion Env10/Envelope #10: "<</PageSize[297 684]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC5/Envelope C5: "<</PageSize[459 649]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvDL/Envelope DL: "<</PageSize[312 624]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvISOB5/Envelope B5: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvMonarch/Envelope Monarch: "<</PageSize[279 540]/ImagingBBox null>>setpagedevice"
+*PageRegion Executive/Executive: "<</PageSize[522 756]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/US Legal: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*ImageableArea A4/A4: "0 0 595 842"
+*ImageableArea Letter/US Letter: "0 0 612 792"
+*ImageableArea A5/A5: "0 0 421 595"
+*ImageableArea B5/B5 (JIS): "0 0 516 729"
+*ImageableArea Env10/Envelope #10: "0 0 297 684"
+*ImageableArea EnvC5/Envelope C5: "0 0 459 649"
+*ImageableArea EnvDL/Envelope DL: "0 0 312 624"
+*ImageableArea EnvISOB5/Envelope B5: "0 0 499 709"
+*ImageableArea EnvMonarch/Envelope Monarch: "0 0 279 540"
+*ImageableArea Executive/Executive: "0 0 522 756"
+*ImageableArea Legal/US Legal: "0 0 612 1008"
+
+*DefaultPaperDimension: A4
+*PaperDimension A4/A4: "595 842"
+*PaperDimension Letter/US Letter: "612 792"
+*PaperDimension A5/A5: "421 595"
+*PaperDimension B5/B5 (JIS): "516 729"
+*PaperDimension Env10/Envelope #10: "297 684"
+*PaperDimension EnvC5/Envelope C5: "459 649"
+*PaperDimension EnvDL/Envelope DL: "312 624"
+*PaperDimension EnvISOB5/Envelope B5: "499 709"
+*PaperDimension EnvMonarch/Envelope Monarch: "279 540"
+*PaperDimension Executive/Executive: "522 756"
+*PaperDimension Legal/US Legal: "612 1008"
+
+*CloseGroup: General
+
+*OpenGroup: Adjustment/Adjustment
+
+*OpenUI *LeftSkip/Left Skip (in pixels): PickOne
+*FoomaticRIPOption LeftSkip: int CmdLine B
+*FoomaticRIPOptionPrototype LeftSkip: " -l %s"
+*FoomaticRIPOptionRange LeftSkip: 0 1600
+*OrderDependency: 120 AnySetup *LeftSkip
+*DefaultLeftSkip: 110
+*FoomaticRIPDefaultLeftSkip: 110
+*LeftSkip 0/0: "%% FoomaticRIPOptionSetting: LeftSkip=0"
+*LeftSkip 10/10: "%% FoomaticRIPOptionSetting: LeftSkip=10"
+*LeftSkip 20/20: "%% FoomaticRIPOptionSetting: LeftSkip=20"
+*LeftSkip 30/30: "%% FoomaticRIPOptionSetting: LeftSkip=30"
+*LeftSkip 40/40: "%% FoomaticRIPOptionSetting: LeftSkip=40"
+*LeftSkip 50/50: "%% FoomaticRIPOptionSetting: LeftSkip=50"
+*LeftSkip 60/60: "%% FoomaticRIPOptionSetting: LeftSkip=60"
+*LeftSkip 70/70: "%% FoomaticRIPOptionSetting: LeftSkip=70"
+*LeftSkip 80/80: "%% FoomaticRIPOptionSetting: LeftSkip=80"
+*LeftSkip 90/90: "%% FoomaticRIPOptionSetting: LeftSkip=90"
+*LeftSkip 100/100: "%% FoomaticRIPOptionSetting: LeftSkip=100"
+*LeftSkip 110/110: "%% FoomaticRIPOptionSetting: LeftSkip=110"
+*LeftSkip 120/120: "%% FoomaticRIPOptionSetting: LeftSkip=120"
+*LeftSkip 130/130: "%% FoomaticRIPOptionSetting: LeftSkip=130"
+*LeftSkip 140/140: "%% FoomaticRIPOptionSetting: LeftSkip=140"
+*LeftSkip 150/150: "%% FoomaticRIPOptionSetting: LeftSkip=150"
+*LeftSkip 160/160: "%% FoomaticRIPOptionSetting: LeftSkip=160"
+*LeftSkip 180/180: "%% FoomaticRIPOptionSetting: LeftSkip=180"
+*LeftSkip 200/200: "%% FoomaticRIPOptionSetting: LeftSkip=200"
+*LeftSkip 220/220: "%% FoomaticRIPOptionSetting: LeftSkip=220"
+*LeftSkip 240/240: "%% FoomaticRIPOptionSetting: LeftSkip=240"
+*LeftSkip 260/260: "%% FoomaticRIPOptionSetting: LeftSkip=260"
+*LeftSkip 280/280: "%% FoomaticRIPOptionSetting: LeftSkip=280"
+*LeftSkip 300/300: "%% FoomaticRIPOptionSetting: LeftSkip=300"
+*LeftSkip 320/320: "%% FoomaticRIPOptionSetting: LeftSkip=320"
+*LeftSkip 340/340: "%% FoomaticRIPOptionSetting: LeftSkip=340"
+*LeftSkip 360/360: "%% FoomaticRIPOptionSetting: LeftSkip=360"
+*LeftSkip 380/380: "%% FoomaticRIPOptionSetting: LeftSkip=380"
+*LeftSkip 400/400: "%% FoomaticRIPOptionSetting: LeftSkip=400"
+*LeftSkip 420/420: "%% FoomaticRIPOptionSetting: LeftSkip=420"
+*LeftSkip 440/440: "%% FoomaticRIPOptionSetting: LeftSkip=440"
+*LeftSkip 460/460: "%% FoomaticRIPOptionSetting: LeftSkip=460"
+*LeftSkip 480/480: "%% FoomaticRIPOptionSetting: LeftSkip=480"
+*LeftSkip 500/500: "%% FoomaticRIPOptionSetting: LeftSkip=500"
+*LeftSkip 520/520: "%% FoomaticRIPOptionSetting: LeftSkip=520"
+*LeftSkip 540/540: "%% FoomaticRIPOptionSetting: LeftSkip=540"
+*LeftSkip 560/560: "%% FoomaticRIPOptionSetting: LeftSkip=560"
+*LeftSkip 580/580: "%% FoomaticRIPOptionSetting: LeftSkip=580"
+*LeftSkip 600/600: "%% FoomaticRIPOptionSetting: LeftSkip=600"
+*LeftSkip 620/620: "%% FoomaticRIPOptionSetting: LeftSkip=620"
+*LeftSkip 640/640: "%% FoomaticRIPOptionSetting: LeftSkip=640"
+*LeftSkip 660/660: "%% FoomaticRIPOptionSetting: LeftSkip=660"
+*LeftSkip 680/680: "%% FoomaticRIPOptionSetting: LeftSkip=680"
+*LeftSkip 700/700: "%% FoomaticRIPOptionSetting: LeftSkip=700"
+*LeftSkip 720/720: "%% FoomaticRIPOptionSetting: LeftSkip=720"
+*LeftSkip 740/740: "%% FoomaticRIPOptionSetting: LeftSkip=740"
+*LeftSkip 760/760: "%% FoomaticRIPOptionSetting: LeftSkip=760"
+*LeftSkip 780/780: "%% FoomaticRIPOptionSetting: LeftSkip=780"
+*LeftSkip 800/800: "%% FoomaticRIPOptionSetting: LeftSkip=800"
+*LeftSkip 820/820: "%% FoomaticRIPOptionSetting: LeftSkip=820"
+*LeftSkip 840/840: "%% FoomaticRIPOptionSetting: LeftSkip=840"
+*LeftSkip 860/860: "%% FoomaticRIPOptionSetting: LeftSkip=860"
+*LeftSkip 880/880: "%% FoomaticRIPOptionSetting: LeftSkip=880"
+*LeftSkip 900/900: "%% FoomaticRIPOptionSetting: LeftSkip=900"
+*LeftSkip 920/920: "%% FoomaticRIPOptionSetting: LeftSkip=920"
+*LeftSkip 940/940: "%% FoomaticRIPOptionSetting: LeftSkip=940"
+*LeftSkip 960/960: "%% FoomaticRIPOptionSetting: LeftSkip=960"
+*LeftSkip 980/980: "%% FoomaticRIPOptionSetting: LeftSkip=980"
+*LeftSkip 1000/1000: "%% FoomaticRIPOptionSetting: LeftSkip=1000"
+*LeftSkip 1020/1020: "%% FoomaticRIPOptionSetting: LeftSkip=1020"
+*LeftSkip 1040/1040: "%% FoomaticRIPOptionSetting: LeftSkip=1040"
+*LeftSkip 1060/1060: "%% FoomaticRIPOptionSetting: LeftSkip=1060"
+*LeftSkip 1080/1080: "%% FoomaticRIPOptionSetting: LeftSkip=1080"
+*LeftSkip 1100/1100: "%% FoomaticRIPOptionSetting: LeftSkip=1100"
+*LeftSkip 1120/1120: "%% FoomaticRIPOptionSetting: LeftSkip=1120"
+*LeftSkip 1140/1140: "%% FoomaticRIPOptionSetting: LeftSkip=1140"
+*LeftSkip 1160/1160: "%% FoomaticRIPOptionSetting: LeftSkip=1160"
+*LeftSkip 1180/1180: "%% FoomaticRIPOptionSetting: LeftSkip=1180"
+*LeftSkip 1200/1200: "%% FoomaticRIPOptionSetting: LeftSkip=1200"
+*LeftSkip 1220/1220: "%% FoomaticRIPOptionSetting: LeftSkip=1220"
+*LeftSkip 1240/1240: "%% FoomaticRIPOptionSetting: LeftSkip=1240"
+*LeftSkip 1260/1260: "%% FoomaticRIPOptionSetting: LeftSkip=1260"
+*LeftSkip 1280/1280: "%% FoomaticRIPOptionSetting: LeftSkip=1280"
+*LeftSkip 1300/1300: "%% FoomaticRIPOptionSetting: LeftSkip=1300"
+*LeftSkip 1320/1320: "%% FoomaticRIPOptionSetting: LeftSkip=1320"
+*LeftSkip 1340/1340: "%% FoomaticRIPOptionSetting: LeftSkip=1340"
+*LeftSkip 1360/1360: "%% FoomaticRIPOptionSetting: LeftSkip=1360"
+*LeftSkip 1380/1380: "%% FoomaticRIPOptionSetting: LeftSkip=1380"
+*LeftSkip 1400/1400: "%% FoomaticRIPOptionSetting: LeftSkip=1400"
+*LeftSkip 1420/1420: "%% FoomaticRIPOptionSetting: LeftSkip=1420"
+*LeftSkip 1440/1440: "%% FoomaticRIPOptionSetting: LeftSkip=1440"
+*LeftSkip 1460/1460: "%% FoomaticRIPOptionSetting: LeftSkip=1460"
+*LeftSkip 1480/1480: "%% FoomaticRIPOptionSetting: LeftSkip=1480"
+*LeftSkip 1500/1500: "%% FoomaticRIPOptionSetting: LeftSkip=1500"
+*LeftSkip 1520/1520: "%% FoomaticRIPOptionSetting: LeftSkip=1520"
+*LeftSkip 1540/1540: "%% FoomaticRIPOptionSetting: LeftSkip=1540"
+*LeftSkip 1560/1560: "%% FoomaticRIPOptionSetting: LeftSkip=1560"
+*LeftSkip 1580/1580: "%% FoomaticRIPOptionSetting: LeftSkip=1580"
+*LeftSkip 1600/1600: "%% FoomaticRIPOptionSetting: LeftSkip=1600"
+*CloseUI: *LeftSkip
+
+*OpenUI *TopSkip/Top Skip (in pixels): PickOne
+*FoomaticRIPOption TopSkip: int CmdLine B
+*FoomaticRIPOptionPrototype TopSkip: " -t %s"
+*FoomaticRIPOptionRange TopSkip: 0 1600
+*OrderDependency: 110 AnySetup *TopSkip
+*DefaultTopSkip: 90
+*FoomaticRIPDefaultTopSkip: 90
+*TopSkip 0/0: "%% FoomaticRIPOptionSetting: TopSkip=0"
+*TopSkip 10/10: "%% FoomaticRIPOptionSetting: TopSkip=10"
+*TopSkip 20/20: "%% FoomaticRIPOptionSetting: TopSkip=20"
+*TopSkip 30/30: "%% FoomaticRIPOptionSetting: TopSkip=30"
+*TopSkip 40/40: "%% FoomaticRIPOptionSetting: TopSkip=40"
+*TopSkip 50/50: "%% FoomaticRIPOptionSetting: TopSkip=50"
+*TopSkip 60/60: "%% FoomaticRIPOptionSetting: TopSkip=60"
+*TopSkip 70/70: "%% FoomaticRIPOptionSetting: TopSkip=70"
+*TopSkip 80/80: "%% FoomaticRIPOptionSetting: TopSkip=80"
+*TopSkip 90/90: "%% FoomaticRIPOptionSetting: TopSkip=90"
+*TopSkip 100/100: "%% FoomaticRIPOptionSetting: TopSkip=100"
+*TopSkip 110/110: "%% FoomaticRIPOptionSetting: TopSkip=110"
+*TopSkip 120/120: "%% FoomaticRIPOptionSetting: TopSkip=120"
+*TopSkip 140/140: "%% FoomaticRIPOptionSetting: TopSkip=140"
+*TopSkip 150/150: "%% FoomaticRIPOptionSetting: TopSkip=150"
+*TopSkip 160/160: "%% FoomaticRIPOptionSetting: TopSkip=160"
+*TopSkip 180/180: "%% FoomaticRIPOptionSetting: TopSkip=180"
+*TopSkip 200/200: "%% FoomaticRIPOptionSetting: TopSkip=200"
+*TopSkip 220/220: "%% FoomaticRIPOptionSetting: TopSkip=220"
+*TopSkip 240/240: "%% FoomaticRIPOptionSetting: TopSkip=240"
+*TopSkip 260/260: "%% FoomaticRIPOptionSetting: TopSkip=260"
+*TopSkip 280/280: "%% FoomaticRIPOptionSetting: TopSkip=280"
+*TopSkip 300/300: "%% FoomaticRIPOptionSetting: TopSkip=300"
+*TopSkip 320/320: "%% FoomaticRIPOptionSetting: TopSkip=320"
+*TopSkip 340/340: "%% FoomaticRIPOptionSetting: TopSkip=340"
+*TopSkip 360/360: "%% FoomaticRIPOptionSetting: TopSkip=360"
+*TopSkip 380/380: "%% FoomaticRIPOptionSetting: TopSkip=380"
+*TopSkip 400/400: "%% FoomaticRIPOptionSetting: TopSkip=400"
+*TopSkip 420/420: "%% FoomaticRIPOptionSetting: TopSkip=420"
+*TopSkip 440/440: "%% FoomaticRIPOptionSetting: TopSkip=440"
+*TopSkip 460/460: "%% FoomaticRIPOptionSetting: TopSkip=460"
+*TopSkip 480/480: "%% FoomaticRIPOptionSetting: TopSkip=480"
+*TopSkip 500/500: "%% FoomaticRIPOptionSetting: TopSkip=500"
+*TopSkip 520/520: "%% FoomaticRIPOptionSetting: TopSkip=520"
+*TopSkip 540/540: "%% FoomaticRIPOptionSetting: TopSkip=540"
+*TopSkip 560/560: "%% FoomaticRIPOptionSetting: TopSkip=560"
+*TopSkip 580/580: "%% FoomaticRIPOptionSetting: TopSkip=580"
+*TopSkip 600/600: "%% FoomaticRIPOptionSetting: TopSkip=600"
+*TopSkip 620/620: "%% FoomaticRIPOptionSetting: TopSkip=620"
+*TopSkip 640/640: "%% FoomaticRIPOptionSetting: TopSkip=640"
+*TopSkip 660/660: "%% FoomaticRIPOptionSetting: TopSkip=660"
+*TopSkip 680/680: "%% FoomaticRIPOptionSetting: TopSkip=680"
+*TopSkip 700/700: "%% FoomaticRIPOptionSetting: TopSkip=700"
+*TopSkip 720/720: "%% FoomaticRIPOptionSetting: TopSkip=720"
+*TopSkip 740/740: "%% FoomaticRIPOptionSetting: TopSkip=740"
+*TopSkip 760/760: "%% FoomaticRIPOptionSetting: TopSkip=760"
+*TopSkip 780/780: "%% FoomaticRIPOptionSetting: TopSkip=780"
+*TopSkip 800/800: "%% FoomaticRIPOptionSetting: TopSkip=800"
+*TopSkip 820/820: "%% FoomaticRIPOptionSetting: TopSkip=820"
+*TopSkip 840/840: "%% FoomaticRIPOptionSetting: TopSkip=840"
+*TopSkip 860/860: "%% FoomaticRIPOptionSetting: TopSkip=860"
+*TopSkip 880/880: "%% FoomaticRIPOptionSetting: TopSkip=880"
+*TopSkip 900/900: "%% FoomaticRIPOptionSetting: TopSkip=900"
+*TopSkip 920/920: "%% FoomaticRIPOptionSetting: TopSkip=920"
+*TopSkip 940/940: "%% FoomaticRIPOptionSetting: TopSkip=940"
+*TopSkip 960/960: "%% FoomaticRIPOptionSetting: TopSkip=960"
+*TopSkip 980/980: "%% FoomaticRIPOptionSetting: TopSkip=980"
+*TopSkip 1000/1000: "%% FoomaticRIPOptionSetting: TopSkip=1000"
+*TopSkip 1020/1020: "%% FoomaticRIPOptionSetting: TopSkip=1020"
+*TopSkip 1040/1040: "%% FoomaticRIPOptionSetting: TopSkip=1040"
+*TopSkip 1060/1060: "%% FoomaticRIPOptionSetting: TopSkip=1060"
+*TopSkip 1080/1080: "%% FoomaticRIPOptionSetting: TopSkip=1080"
+*TopSkip 1100/1100: "%% FoomaticRIPOptionSetting: TopSkip=1100"
+*TopSkip 1120/1120: "%% FoomaticRIPOptionSetting: TopSkip=1120"
+*TopSkip 1140/1140: "%% FoomaticRIPOptionSetting: TopSkip=1140"
+*TopSkip 1160/1160: "%% FoomaticRIPOptionSetting: TopSkip=1160"
+*TopSkip 1180/1180: "%% FoomaticRIPOptionSetting: TopSkip=1180"
+*TopSkip 1200/1200: "%% FoomaticRIPOptionSetting: TopSkip=1200"
+*TopSkip 1220/1220: "%% FoomaticRIPOptionSetting: TopSkip=1220"
+*TopSkip 1240/1240: "%% FoomaticRIPOptionSetting: TopSkip=1240"
+*TopSkip 1260/1260: "%% FoomaticRIPOptionSetting: TopSkip=1260"
+*TopSkip 1280/1280: "%% FoomaticRIPOptionSetting: TopSkip=1280"
+*TopSkip 1300/1300: "%% FoomaticRIPOptionSetting: TopSkip=1300"
+*TopSkip 1320/1320: "%% FoomaticRIPOptionSetting: TopSkip=1320"
+*TopSkip 1340/1340: "%% FoomaticRIPOptionSetting: TopSkip=1340"
+*TopSkip 1360/1360: "%% FoomaticRIPOptionSetting: TopSkip=1360"
+*TopSkip 1380/1380: "%% FoomaticRIPOptionSetting: TopSkip=1380"
+*TopSkip 1400/1400: "%% FoomaticRIPOptionSetting: TopSkip=1400"
+*TopSkip 1420/1420: "%% FoomaticRIPOptionSetting: TopSkip=1420"
+*TopSkip 1440/1440: "%% FoomaticRIPOptionSetting: TopSkip=1440"
+*TopSkip 1460/1460: "%% FoomaticRIPOptionSetting: TopSkip=1460"
+*TopSkip 1480/1480: "%% FoomaticRIPOptionSetting: TopSkip=1480"
+*TopSkip 1500/1500: "%% FoomaticRIPOptionSetting: TopSkip=1500"
+*TopSkip 1520/1520: "%% FoomaticRIPOptionSetting: TopSkip=1520"
+*TopSkip 1540/1540: "%% FoomaticRIPOptionSetting: TopSkip=1540"
+*TopSkip 1560/1560: "%% FoomaticRIPOptionSetting: TopSkip=1560"
+*TopSkip 1580/1580: "%% FoomaticRIPOptionSetting: TopSkip=1580"
+*TopSkip 1600/1600: "%% FoomaticRIPOptionSetting: TopSkip=1600"
+*CloseUI: *TopSkip
+
+*CloseGroup: Adjustment
+
+*OpenGroup: Miscellaneous/Miscellaneous
+
+*OpenUI *AlwaysReset/Reset printer before printing: Boolean
+*FoomaticRIPOption AlwaysReset: bool CmdLine B
+*FoomaticRIPOptionSetting AlwaysReset: " -r"
+*OrderDependency: 100 AnySetup *AlwaysReset
+*DefaultNoReset: True
+*AlwaysReset True/NeverReset: "%% FoomaticRIPOptionSetting: AlwaysReset=True"
+*AlwaysReset False/AlwaysReset: "%% FoomaticRIPOptionSetting: AlwaysReset=False"
+*CloseUI: *AlwaysReset
+
+*% OpenUI *PowerSaving/Power saving mode after printing: Boolean
+*% FoomaticRIPOption PowerSaving: bool CmdLine B
+*% FoomaticRIPOptionSetting PowerSaving: " -E"
+*% OrderDependency: 105 AnySetup *PowerSaving
+*% DefaultPowerSaving: False
+*% PowerSaving True/PowerSaving: "%% FoomaticRIPOptionSetting: PowerSaving=True"
+*% PowerSaving False/NoPowerSaving: "%% FoomaticRIPOptionSetting: PowerSaving=False"
+*% CloseUI: *PowerSaving
+
+*CloseGroup: Miscellaneous
+
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+

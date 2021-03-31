@@ -1,0 +1,2 @@
+ - Implement CUPS error messages
+ - Allow the use of another /dev/usb/lp# device

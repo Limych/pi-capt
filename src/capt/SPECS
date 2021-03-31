@@ -1,0 +1,59 @@
+Reponse strings :
+
+r: n=6 : a1 a0 16 0 0 10
+r: n=16 : d0 0 0 2 b0 9 b3 d 7d 0 fd 0 0 0 0 0 (paper)
+
+r: n=6 : a1 a0 16 0 0 10
+r: n=16 : 80 0 0 2 b0 9 b3 d 7d 0 0 0 0 0 0 0 (no paper)
+
+Interbands :
+
+w: n=4 : a0 e0 4 0
+r: n=6 : a0 e0 6 0 10 c (ready to receive more data)
+
+w: n=4 : a0 e0 4 0
+r: n=6 : a0 e0 6 0 18 c (buffer full, wait)
+
+600dpi
+
+592b/line = 4736 pixels
+
+41 syntax
+--
+End of line (don't change the buffer)
+--
+
+Simple bytes:
+
+00 syntax (1-7 bytes)
+---
+00MMM000 M bytes
+
+11 syntax (8-255 bytes)
+--
+101MMMMM 11MMM000 M bytes
+
+Repeated bytes:
+
+01 16p->56p
+--
+01NNN000 XXXXXXXX
+N*(X pattern)
+
+11 16p->56p +8 (3 bytes)
+--
+11NNN001 XXXXXXXX YYYYYYYY
+N*(X pattern) + Y pattern
+--
+
+101 64p->2040p +8
+--
+101NNNNN 00NNNMMM XXXXXXXX M bytes
+N*(X pattern) + M bytes (0-2, maybe more)
+--
+
+First packet header
+--
+a0 c0 0xXX 0xYY
+0xYYXX = total transfer size
+--
